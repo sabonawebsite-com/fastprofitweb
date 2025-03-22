@@ -1,0 +1,188 @@
+/* Mywork.css */
+:root {
+    --work-primary: #0a192f;
+    --work-accent: #64ffda;
+    --work-text: #ccd6f6;
+    --work-hover: rgba(100, 255, 218, 0.1);
+    --work-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  
+  .mywork {
+    padding: 8rem 6rem;
+    background-color: var(--work-primary);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .mywork-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    position: relative;
+  }
+  
+  .mywork-title h1 {
+    font-size: 3.5rem;
+    color: var(--work-text);
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .mywork-title img {
+    position: absolute;
+    right: -10rem;
+    top: -4rem;
+    opacity: 0.05;
+    width: 400px;
+    height: auto;
+    pointer-events: none;
+  }
+  
+  .mywork-contener {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+  }
+  
+  .contain {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: translateY(0);
+    transition: var(--work-transition);
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  }
+  
+  .contain:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px -10px rgba(2, 12, 27, 0.7);
+  }
+  
+  .contain::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(10, 25, 47, 0) 0%, rgba(10, 25, 47, 0.8) 100%);
+    z-index: 1;
+    transition: var(--work-transition);
+  }
+  
+  .contain:hover::before {
+    background: linear-gradient(180deg, rgba(100, 255, 218, 0.1) 0%, rgba(10, 25, 47, 0.9) 100%);
+  }
+  
+  .my-work-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .contain:hover .my-work-img {
+    transform: scale(1.05);
+  }
+  
+  .contain p {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: var(--work-accent);
+    font-size: 1.5rem;
+    font-weight: 600;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: var(--work-transition);
+  }
+  
+  .contain:hover p {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .show-more {
+    text-align: center;
+    margin-top: 4rem;
+    position: relative;
+  }
+  
+  .show-more p {
+    display: inline-block;
+    color: var(--work-accent);
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border: 2px solid var(--work-accent);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--work-transition);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .show-more p::after {
+    content: '➡️';
+    position: absolute;
+    right: -20px;
+    transition: var(--work-transition);
+  }
+  
+  .show-more p:hover {
+    background-color: var(--work-hover);
+    padding-right: 3rem;
+  }
+  
+  .show-more p:hover::after {
+    right: 15px;
+    animation: arrowBounce 0.6s infinite;
+  }
+  
+  @keyframes arrowBounce {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(5px); }
+  }
+  
+  @media (max-width: 1024px) {
+    .mywork {
+      padding: 6rem 3rem;
+    }
+    
+    .mywork-contener {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mywork {
+      padding: 4rem 2rem;
+    }
+    
+    .mywork-title h1 {
+      font-size: 2.5rem;
+    }
+    
+    .mywork-contener {
+      grid-template-columns: 1fr;
+    }
+    
+    .my-work-img {
+      height: 300px;
+    }
+  }
+  
+  /* Optional: Add parallax effect on scroll */
+  @media (prefers-reduced-motion: no-preference) {
+    .mywork-title h1 {
+      transition: transform 0.3s ease-out;
+    }
+    
+    .mywork-title img {
+      transition: transform 0.5s ease-out;
+    }
+  }
