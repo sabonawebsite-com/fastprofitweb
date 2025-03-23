@@ -1,7 +1,7 @@
 import React from 'react'
 import './Contact.css'
 import theme from './theme_pattern.svg';
-import logo from './pro-logo.png'
+import logo from './sabo11.png'
 import call from './call_icon.svg';
 import location from './location_icon.svg';
 import mail from './mail_icon.svg';

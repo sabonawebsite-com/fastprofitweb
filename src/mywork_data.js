@@ -1,8 +1,8 @@
 import project1_img from './hotel_app.png'
 import project2_img from './caffe_pro1.png'
-import project3_img from './caffe_pro1.png'
+import project3_img from './home1.png'
 import project4_img from './bru1.png'
-import project5_img from './bru.png'
+import project5_img from './advance2.png'
 import project6_img from './dict.jpg'
 
 

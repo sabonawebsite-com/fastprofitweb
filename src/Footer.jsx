@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Footer.css'
-import logo_footer from './sabo.png'
-import user from './user_icon.svg'
+import logo_footer from './pro-logo.png'
+
 const Footer = () => {
   
  const[comment,setComment]=useState("")
@@ -21,15 +21,15 @@ const Footer = () => {
            <p>you can contact with me by following platform</p>
         </div>
         <div className="footer-top-right">
-            <div className="footer-email-input">
+            {/* <div className="footer-email-input">
                 <img src={user} alt="" />
                
                 
                 <input  type="email" placeholder='Enter Your Email' />
                 
-            </div>
+            </div> */}
             
-            <div className="footer-subscribe" ><p onClick={()=>setSub('subscribed')}>subscribe</p>{sub==="subscribed"?<h3>subscrition is added</h3>:<></>}</div>
+            {/* <div className="footer-subscribe" ><p onClick={()=>setSub('subscribed')}>subscribe</p>{sub==="subscribed"?<h3>subscrition is added</h3>:<></>}</div> */}
         </div>
       </div>
       <hr />

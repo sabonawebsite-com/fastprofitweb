@@ -1,17 +1,21 @@
 import React from 'react'
 import './Hero.css'
 import profile from './sabo21.jpg'
+import qrcode from './web.png'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 const Hero = () => {
   return (
     <div className='hero' id='home'>
       <img src={profile} alt="" className='proimg'/>
-      <h1><span>I am Sabona Marara</span> frontend Devloper based in Ethiopia</h1>
-      <h1><span>BalTech</span></h1>
-      <p>I have exprice 1 years work freelance </p>
+      <img src={qrcode} alt="" className='qrcode'/>
+      <h1><span>Hi, I'm Sabona Marara</span></h1>
+      
+      <h1>I am a frontend web developer based in Ethiopia. </h1>
+      
+    
       <div className="hero-action">
         <div className="hero-connect"><AnchorLink className='anchor-link' offset={50}href='#contact'>connect with me</AnchorLink></div>
-        <div className="hero-resume">My Resume</div>
+        <div className="hero-resume"><a href="https://drive.google.com/open?id=1fM-DdMMFqbswABdffu3z7-75WqHxbcq8">My Resume</a></div>
       </div>
     </div>
   )

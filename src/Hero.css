@@ -22,6 +22,11 @@
     overflow: hidden;
     backdrop-filter: blur(10px);
   }
+  a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+  }
   
   .proimg {
     width: 280px;
@@ -35,7 +40,18 @@
     animation: float 6s ease-in-out infinite;
     transition: var(--hero-transition);
   }
-  
+  .qrcode{
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    object-fit: cover;
+    border: 4px solid transparent;
+    background: linear-gradient(45deg, #64ffda, #8a2be2) border-box;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 50px rgba(100, 255, 218, 0.2);
+    animation: float 6s ease-in-out infinite;
+    transition: var(--hero-transition);
+  }
   @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
