@@ -11,6 +11,7 @@ const Contact = () => {
     const formData = new FormData(event.target);
 
     formData.append("access_key", "fb157278-c020-42dd-bd36-1f503b4fd21b");
+    formData.append("form_name", "contact_form");
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -39,7 +40,7 @@ const Contact = () => {
       <div className="contact-section">
         <div className="contact-section-left">
         <img className='image-logo' src={logo} alt="" />
-            <h1>Let Talk</h1>
+            <h1>Let's Talk</h1>
             <p>you can talk with me by platform you like </p>
             <div className="contact-details">
             <div className='contact-detail'>

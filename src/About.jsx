@@ -72,7 +72,7 @@ const About = () => {
             </div>
             <div className="about-skill">
               {" "}
-              <p>Github</p>
+              <p>Git & Github</p>
               <hr style={{ width: "50%" }} />
             </div>
             <div className="about-skill">
