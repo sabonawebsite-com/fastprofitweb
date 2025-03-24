@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Footer.css'
-import logo_footer from './pro-logo.png'
+import logo_footer from './logo.png'
 
 const Footer = () => {
   
@@ -36,9 +36,12 @@ const Footer = () => {
       <div className="footer-bottom">
         <p className="footer-bottom-left">&copy;2025 Sabona Marara All Right Resived</p>
         <div className="footer-bottom-right">
-            <p>Term of Services</p>
-            <p>Privacy Policy</p>
-            <p>Connect with Me</p>
+          <a href="">Facebook</a>
+          <a href="">LinkedIn</a>
+          <a href="">YouTube</a>
+          <a href="">Reddit</a>
+          <a href="">Email</a>
+          <a href="">Telegram</a>
         </div>
       </div>
     </div>
