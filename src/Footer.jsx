@@ -40,8 +40,8 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/sabona-marara-113b4b2b8/">LinkedIn</a>
           <a href="https://www.youtube.com/@Sabcodes">YouTube</a>
           <a href="https://www.reddit.com/user/Present_Taste_6953/">Reddit</a>
-          <a href="">Email</a>
-          <a href="">Telegram</a>
+          
+         
         </div>
       </div>
     </div>
