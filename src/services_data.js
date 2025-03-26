@@ -22,13 +22,14 @@ const Services_Data = [
     {
         s_no:"05",
         s_name:"Digital marketing",
-        s_desc:"Web development is the process of building, programming..."
+        s_desc:"Digital marketing involves promoting brands, products, or services through digital channels to connect with current and potential customers. It leverages online platforms and technologies to reach audiences where they spend significant time."
     },
     {
         s_no:"06",
         s_name:"digitalize document",
         s_desc:"Digitalizing a document means converting a physical document (like a paper document) into a digital format (like a make search or csv,excel,json,MSQL,mongodb format) that can be stored and accessed electronically"
     },
+   
 ]
  
 export default Services_Data;
